@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		004594C82A22C3936F1A7491 /* Pods_Satelita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E8E11FA2E8B0260C7AECC /* Pods_Satelita.framework */; };
+		3D7AE83C22FD7CF700410B5D /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D7AE83B22FD7CF700410B5D /* config.plist */; };
+		3D7AE83F22FD7D7100410B5D /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */; };
 		3DA79E9122FD586A00075AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9022FD586A00075AC8 /* AppDelegate.swift */; };
 		3DA79E9322FD586A00075AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9222FD586A00075AC8 /* ViewController.swift */; };
 		3DA79E9622FD586A00075AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E9422FD586A00075AC8 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D7AE83B22FD7CF700410B5D /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		3DA79E8D22FD586A00075AC8 /* Satelita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satelita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA79E9022FD586A00075AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA79E9222FD586A00075AC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +50,132 @@
 				F089F7CBC65322CA1227DDB7 /* Pods-Satelita.debug.xcconfig */,
 				6E5D25CDB366D141E67A2C30 /* Pods-Satelita.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D7AE83522FD7C4300410B5D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE83822FD7CA600410B5D /* Debug */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3D7AE83622FD7C7A00410B5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DA79E9722FD586D00075AC8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D7AE83722FD7C8600410B5D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE83D22FD7D5700410B5D /* Configuration */,
+				3D7AE84022FD7D7C00410B5D /* Context */,
+				3D7AE84422FD7DAD00410B5D /* Functionalities */,
+				3D7AE84522FD7DBB00410B5D /* Tools */,
+				3D7AE84622FD7DC000410B5D /* UI */,
+				3D7AE84722FD7DC500410B5D /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3D7AE83822FD7CA600410B5D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE83B22FD7CF700410B5D /* config.plist */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		3D7AE83D22FD7D5700410B5D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */,
+				3DA79E9C22FD586D00075AC8 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3D7AE84022FD7D7C00410B5D /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE84122FD7D8300410B5D /* Application */,
+				3D7AE84222FD7D8900410B5D /* LocalRepository */,
+				3D7AE84322FD7D9600410B5D /* RemoteRepository */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		3D7AE84122FD7D8300410B5D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3DA79E9022FD586A00075AC8 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3D7AE84222FD7D8900410B5D /* LocalRepository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalRepository;
+			sourceTree = "<group>";
+		};
+		3D7AE84322FD7D9600410B5D /* RemoteRepository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteRepository;
+			sourceTree = "<group>";
+		};
+		3D7AE84422FD7DAD00410B5D /* Functionalities */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AE84922FD7E2500410B5D /* Home */,
+				3D7AE84822FD7DF100410B5D /* Launch */,
+			);
+			path = Functionalities;
+			sourceTree = "<group>";
+		};
+		3D7AE84522FD7DBB00410B5D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3D7AE84622FD7DC000410B5D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3D7AE84722FD7DC500410B5D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3D7AE84822FD7DF100410B5D /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3DA79E9922FD586D00075AC8 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		3D7AE84922FD7E2500410B5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3DA79E9222FD586A00075AC8 /* ViewController.swift */,
+				3DA79E9422FD586A00075AC8 /* Main.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		3DA79E8422FD586A00075AC8 = {
@@ -71,12 +199,9 @@
 		3DA79E8F22FD586A00075AC8 /* Satelita */ = {
 			isa = PBXGroup;
 			children = (
-				3DA79E9022FD586A00075AC8 /* AppDelegate.swift */,
-				3DA79E9222FD586A00075AC8 /* ViewController.swift */,
-				3DA79E9422FD586A00075AC8 /* Main.storyboard */,
-				3DA79E9722FD586D00075AC8 /* Assets.xcassets */,
-				3DA79E9922FD586D00075AC8 /* LaunchScreen.storyboard */,
-				3DA79E9C22FD586D00075AC8 /* Info.plist */,
+				3D7AE83522FD7C4300410B5D /* Configuration */,
+				3D7AE83722FD7C8600410B5D /* Source */,
+				3D7AE83622FD7C7A00410B5D /* Resources */,
 			);
 			path = Satelita;
 			sourceTree = "<group>";
@@ -149,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7AE83C22FD7CF700410B5D /* config.plist in Resources */,
 				3DA79E9B22FD586D00075AC8 /* LaunchScreen.storyboard in Resources */,
 				3DA79E9822FD586D00075AC8 /* Assets.xcassets in Resources */,
 				3DA79E9622FD586A00075AC8 /* Main.storyboard in Resources */,
@@ -206,6 +332,7 @@
 			files = (
 				3DA79E9322FD586A00075AC8 /* ViewController.swift in Sources */,
 				3DA79E9122FD586A00075AC8 /* AppDelegate.swift in Sources */,
+				3D7AE83F22FD7D7100410B5D /* ConfigurationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Satelita/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Source/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Satelita/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Source/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
