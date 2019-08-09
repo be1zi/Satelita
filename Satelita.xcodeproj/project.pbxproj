@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004594C82A22C3936F1A7491 /* Pods_Satelita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E8E11FA2E8B0260C7AECC /* Pods_Satelita.framework */; };
 		3DA79E9122FD586A00075AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9022FD586A00075AC8 /* AppDelegate.swift */; };
 		3DA79E9322FD586A00075AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9222FD586A00075AC8 /* ViewController.swift */; };
 		3DA79E9622FD586A00075AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E9422FD586A00075AC8 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		3DA79E9722FD586D00075AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA79E9A22FD586D00075AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA79E9C22FD586D00075AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5D25CDB366D141E67A2C30 /* Pods-Satelita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Satelita.release.xcconfig"; path = "Target Support Files/Pods-Satelita/Pods-Satelita.release.xcconfig"; sourceTree = "<group>"; };
+		F089F7CBC65322CA1227DDB7 /* Pods-Satelita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Satelita.debug.xcconfig"; path = "Target Support Files/Pods-Satelita/Pods-Satelita.debug.xcconfig"; sourceTree = "<group>"; };
+		FB9E8E11FA2E8B0260C7AECC /* Pods_Satelita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Satelita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004594C82A22C3936F1A7491 /* Pods_Satelita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024B48241C6125CBADA670EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F089F7CBC65322CA1227DDB7 /* Pods-Satelita.debug.xcconfig */,
+				6E5D25CDB366D141E67A2C30 /* Pods-Satelita.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3DA79E8422FD586A00075AC8 = {
 			isa = PBXGroup;
 			children = (
 				3DA79E8F22FD586A00075AC8 /* Satelita */,
 				3DA79E8E22FD586A00075AC8 /* Products */,
+				024B48241C6125CBADA670EF /* Pods */,
+				871E6CC31EE48EE0479B7113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = Satelita;
 			sourceTree = "<group>";
 		};
+		871E6CC31EE48EE0479B7113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E8E11FA2E8B0260C7AECC /* Pods_Satelita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA79E9F22FD586D00075AC8 /* Build configuration list for PBXNativeTarget "Satelita" */;
 			buildPhases = (
+				EEAD93B4CFCAA918C48594C3 /* [CP] Check Pods Manifest.lock */,
 				3DA79E8922FD586A00075AC8 /* Sources */,
 				3DA79E8A22FD586A00075AC8 /* Frameworks */,
 				3DA79E8B22FD586A00075AC8 /* Resources */,
+				9A3254B84E074C3AC99206C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A3254B84E074C3AC99206C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Satelita/Pods-Satelita-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Satelita/Pods-Satelita-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Satelita/Pods-Satelita-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAD93B4CFCAA918C48594C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Satelita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DA79E8922FD586A00075AC8 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		3DA79EA022FD586D00075AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F089F7CBC65322CA1227DDB7 /* Pods-Satelita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		3DA79EA122FD586D00075AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5D25CDB366D141E67A2C30 /* Pods-Satelita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
