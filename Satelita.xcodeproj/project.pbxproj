@@ -57,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				3D7AE83822FD7CA600410B5D /* Debug */,
+				3DA79E9C22FD586D00075AC8 /* Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -94,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */,
-				3DA79E9C22FD586D00075AC8 /* Info.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Source/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Source/Configuration/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Satelita/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
