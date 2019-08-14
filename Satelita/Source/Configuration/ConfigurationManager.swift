@@ -17,6 +17,14 @@ struct ConfigurationManager {
     static let sharedInstance = ConfigurationManager()
     
     //
+    // MARK: - Init
+    //
+    
+    init() {
+        Logger.setType(ConfigurationManager.self)
+    }
+    
+    //
     // MARK: - Getters
     //
     
@@ -33,6 +41,7 @@ struct ConfigurationManager {
         let fileURL = Bundle.main.url(forResource: "config", withExtension: "plist")
         
         guard let url = fileURL else {
+            Logger.logError(error: "Configuration file not found!")
             return nil
         }
         
@@ -42,14 +51,14 @@ struct ConfigurationManager {
         do {
             fileData = try Data.init(contentsOf: url)
         } catch {
-            print(error)
+            Logger.logError(error: error)
             return nil
         }
         
         do {
             dict = try PropertyListSerialization.propertyList(from: fileData, format: nil) as? [String: Any]
         } catch {
-            print(error)
+            Logger.logError(error: error)
             return nil
         }
         
@@ -60,14 +69,17 @@ struct ConfigurationManager {
         let dict = loadConfiguration()
         
         guard let properties = dict else {
+            Logger.logError(error: "Cant load properties from configuration file.")
             return nil
         }
         
         guard let api = properties[root] as? [String: Any] else {
+            Logger.logError(error: "Root with name \"\(root)\" doesnt exist in configuration file.")
             return nil
         }
         
         guard let result = api[name] as? String else {
+            Logger.logError(error: "Cant cast properties data into dictionary.")
             return nil
         }
         

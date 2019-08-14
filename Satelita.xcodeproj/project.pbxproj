@@ -10,6 +10,7 @@
 		004594C82A22C3936F1A7491 /* Pods_Satelita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9E8E11FA2E8B0260C7AECC /* Pods_Satelita.framework */; };
 		3D7AE83C22FD7CF700410B5D /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D7AE83B22FD7CF700410B5D /* config.plist */; };
 		3D7AE83F22FD7D7100410B5D /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */; };
+		3DA2A7982303FFAC001D3EA2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA2A7972303FFAC001D3EA2 /* Logger.swift */; };
 		3DA79E9122FD586A00075AC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9022FD586A00075AC8 /* AppDelegate.swift */; };
 		3DA79E9322FD586A00075AC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA79E9222FD586A00075AC8 /* ViewController.swift */; };
 		3DA79E9622FD586A00075AC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA79E9422FD586A00075AC8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		3D7AE83B22FD7CF700410B5D /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		3D7AE83E22FD7D7100410B5D /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		3DA2A7972303FFAC001D3EA2 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3DA79E8D22FD586A00075AC8 /* Satelita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satelita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA79E9022FD586A00075AC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA79E9222FD586A00075AC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		3D7AE84522FD7DBB00410B5D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3DA2A7972303FFAC001D3EA2 /* Logger.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				3DA79E9322FD586A00075AC8 /* ViewController.swift in Sources */,
 				3DA79E9122FD586A00075AC8 /* AppDelegate.swift in Sources */,
 				3D7AE83F22FD7D7100410B5D /* ConfigurationManager.swift in Sources */,
+				3DA2A7982303FFAC001D3EA2 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
